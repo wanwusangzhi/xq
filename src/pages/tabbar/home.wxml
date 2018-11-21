@@ -20,14 +20,20 @@
         </swiper-item>
       </block>
     </swiper>
+    <!-- 过渡条 -->
     <progress percent="100" color="#d81e06" class="boardcast_progress"/>
   </view>
+  <!-- 模块 -->
   <view class="modules">
     <block wx:for="{{imgUrls}}">
-      <view class="modules_item">
+      <view class="modules_item" bindtap="moduleClick" id="{{index}}">
         <image src="{{item}}" class="modules_image" wx:key="{{index}}"/>
       </view>
     </block>
   </view>
-  <view>列表</view>
+
+  <import src="/src/templates/articleTmpl/item.wxml"/>
+
+  <template is="article_tmpl" wx:for="{{ [1,2,3] }}"></template>
+  
 </view>

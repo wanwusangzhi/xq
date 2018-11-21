@@ -1,7 +1,27 @@
 /**app.wxss**/
+view, text, swiper, scroll-view, image{
+  box-sizing:border-box;
+}
+
 .container {
   height: 100%;
   width: 100%;
   position: relative;
   box-sizing: border-box;
-} 
+}
+
+/* float */
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+
+/* color */
+.color_1 {
+  color: #d81e06
+}
+.color_2 {
+  color: #dbdbdb
+}

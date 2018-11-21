@@ -10,6 +10,9 @@ const page = {
       'https://www.animalpolitico.com/wp-content/uploads/2016/05/perrito-960x500.jpg',
       'https://avatars.mds.yandex.net/get-pdb/477388/fde0c602-7c8c-4374-945e-bd04dc6a41d1/orig'
     ],
+  },
+  moduleClick (e) {
+    const id = e.currentTarget.id
   }
 }
 $page(page)
