@@ -1,0 +1,33 @@
+<!--src/pages/tabbar/home.wxml-->
+<view class="container">
+<!-- 广告 -->
+  <view class="boardcast">
+    <swiper
+      class="boardcast_swiper"
+      indicator-dots="true"
+      indicator-color="#d81e06"
+      indicator-active-color="white"
+      circular="true"
+      autoplay="true"
+      display-multiple-items="1"
+      previous-margin="0rpx"
+      next-margin="0rpx"
+      interval="3000"
+      duration="1500">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="boardcast_swiper_image" wx:key="{{index}}"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <progress percent="100" color="#d81e06" class="boardcast_progress"/>
+  </view>
+  <view class="modules">
+    <block wx:for="{{imgUrls}}">
+      <view class="modules_item">
+        <image src="{{item}}" class="modules_image" wx:key="{{index}}"/>
+      </view>
+    </block>
+  </view>
+  <view>列表</view>
+</view>
