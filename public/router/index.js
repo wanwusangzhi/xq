@@ -13,6 +13,10 @@ export default {
     url: '/src/pages/tabbar/home2',
     isNeedLogin: false
   },
+  home3: {
+    url: '/src/pages/tabbar/home3',
+    isNeedLogin: false
+  },
   // tabbar
   pageNotFound: {
     url: '/src/common/notFound',

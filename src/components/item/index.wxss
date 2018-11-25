@@ -1,0 +1,33 @@
+/* src/components/item/index.wxss */
+
+.box_item {
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid red;
+  position: relative;
+  font-size: 30rpx;
+}
+
+.box_item::after {
+  content: '';
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  border-style: solid;
+  border-right-width: 5rpx;
+  border-bottom-width: 5rpx;
+  border-top: 0rpx;
+  border-left: 0rpx;
+  border-color: #dbdbdb;
+  top: 0;
+  bottom: 0;
+  right: 30rpx;
+  margin: auto;
+  transform: rotateZ(-45deg);
+}
+.box_item:hover {
+  background: #dbdbdb;
+  filter: brightness(1.2);
+}

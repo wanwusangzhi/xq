@@ -1,2 +1,4 @@
 <!--src/pages/tabbar/home2.wxml-->
-<text>src/pages/tabbar/home2.wxml</text>
+<view class="container">
+  <columnComp list-data="{{ columnList }}"></columnComp>
+</view>

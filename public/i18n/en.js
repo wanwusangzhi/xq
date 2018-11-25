@@ -6,14 +6,14 @@ export default {
     cancelText: '取消'
   },
   common: {
-    mobile: '手机号',
-    core: '积分'
+    mobile: 'Mobile',
+    core: 'Core',
   },
   home3: {
-    dayClick: '签到',
+    dayClick:'Record',
     my: {
-      project: '课程',
-      score: '学分'
+      project: 'Project',
+      score: 'Score'
     }
   }
 }

@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents": {
+    "columnComp": "/src/components/column/index",
+    "itemComp": "/src/components/item/index"
+  }
+}

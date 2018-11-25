@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents":  {
+    "columnComp": "/src/components/column/index"
+  }
+}

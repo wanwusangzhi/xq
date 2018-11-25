@@ -17,7 +17,7 @@ const page = {
     if (this.options.share) {
       $share.dealShare(this.options)
     } else {
-      $api.reLaunch('home')
+      $api.reLaunch('home3')
     }
   },
   add() {

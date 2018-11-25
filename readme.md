@@ -38,4 +38,4 @@ wx.ct = {
 ### color
 #dbdbdb
 #d81e06
-#1296db
+#0752dd

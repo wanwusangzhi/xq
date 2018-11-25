@@ -1,18 +1,33 @@
+// remember every instance
+const pageInstances = {}
 /**
  * basic page
  */
 const createBasePage = function() {
   return {
     onLoad(options = {}) {
-      // console.warn('basePage', options, getCurrentPages())
+      this._id = this.route
+      pageInstances[this._id] = this
+
       this.$store = getApp().$store
       this.$api = wx.ct && wx.ct.$api
+      this.$t = wx.ct && wx.ct.$t
       this._setData = this.setData
       this.setData = (obj) => {
         this._setData(obj)
-        this.caclComputed(this)
+        this.caclComputed()
       }
       this.caclComputed()
+    },
+    onUnload() {
+      // delete instance
+      delete pageInstances[this._id]
+    },
+    setCurLang(lang) {
+      this.$api.setStorageSync('lang', lang)
+      Object.keys(pageInstances).forEach(item => {
+        pageInstances[item].caclComputed.call(pageInstances[item])
+      })
     },
     /**
      * computed
@@ -29,6 +44,9 @@ const createBasePage = function() {
   }
 }
 
+/**
+ * export create page
+ */
 const initPage = (page) => {
   const basePage = createBasePage()
   const baseKeys = Object.keys(basePage)
