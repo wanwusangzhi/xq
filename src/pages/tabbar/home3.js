@@ -12,8 +12,9 @@ const page = {
   computed: {
     t() {
       return {
-        mobile: $t('common.mobile'),
-        core: $t('common.core'),
+        name: $t('home3.name'),
+        mobile: $t('home3.mobile'),
+        core: $t('home3.core'),
         dayClick: $t('home3.dayClick')
       }
     },
@@ -40,7 +41,6 @@ const page = {
     }
   },
   clickChange() {
-    this.setCurLang(this.$api.getStorageSync('lang') === 'zh' ? 'en' : 'zh')
   }
 }
 $page(page)

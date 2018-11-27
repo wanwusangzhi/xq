@@ -5,11 +5,11 @@ export default {
     submitText: '确定',
     cancelText: '取消'
   },
-  common: {
+  lang: '中文',
+  home3: {
     mobile: 'Mobile',
     core: 'Core',
-  },
-  home3: {
+    name: 'Name',
     dayClick:'Record',
     my: {
       project: 'Project',

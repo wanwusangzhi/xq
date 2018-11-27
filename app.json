@@ -23,12 +23,18 @@
         "index",
         "index2"
       ]
+    },
+    {
+      "root": "src/pages/article",
+      "pages":[
+        "main"
+      ]
     }
   ],
   "tabBar": {
-    "color":"#dbdbdb",
+    "color": "#dbdbdb",
     "selectedColor": "#d81e06",
-    "borderStyle":"white",
+    "borderStyle": "white",
     "position": "bottom",
     "list": [
       {

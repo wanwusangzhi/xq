@@ -11,8 +11,18 @@ const page = {
       'https://avatars.mds.yandex.net/get-pdb/477388/fde0c602-7c8c-4374-945e-bd04dc6a41d1/orig'
     ],
   },
+  computed: {
+    t() {
+      return {
+        lang: this.$t('lang')
+      }
+    }
+  },
   moduleClick (e) {
     const id = e.currentTarget.id
+  },
+  changeLanguage () {
+    this.$changeLanguage()
   }
 }
 $page(page)

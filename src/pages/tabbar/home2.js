@@ -1,7 +1,8 @@
 const {
   $page,
   $share,
-  $api
+  $api,
+  $routerMap
 } = wx.ct
 
 const page = {
@@ -12,16 +13,20 @@ const page = {
     columnList() {
       return [{
         name: '游戏',
-        src: ''
+        src: '',
+        url: $routerMap.articlemain
       }, {
         name: this.$t('home3.my.project'),
-        src: ''
+        src: '',
+        url: $routerMap.articlemain
       }, {
         name: '游戏ssa枯枯顶替',
-        src: ''
+        src: '',
+        url: $routerMap.articlemain
       }, {
         name: 'sdfisdk木大日',
-        src: ''
+        src: '',
+        url: $routerMap.articlemain
       }]
     }
   }

@@ -23,7 +23,13 @@ const createBasePage = function() {
       // delete instance
       delete pageInstances[this._id]
     },
-    setCurLang(lang) {
+    $changeLanguage(lang) {
+      if (!lang) {
+        lang = this.$api.getStorageSync('lang') === 'zh' ? 'en' : 'zh'
+      }
+      this._setCurLang(lang)
+    },
+    _setCurLang(lang) {
       this.$api.setStorageSync('lang', lang)
       Object.keys(pageInstances).forEach(item => {
         pageInstances[item].caclComputed.call(pageInstances[item])

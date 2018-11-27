@@ -1,5 +1,6 @@
 <!--src/pages/tabbar/home.wxml-->
 <view class="container">
+  <view class="lang .color_2" bindtap='changeLanguage'>{{ t.lang }}</view>
 <!-- 广告 -->
   <view class="boardcast">
     <swiper
@@ -25,15 +26,15 @@
   </view>
   <!-- 模块 -->
   <view class="modules">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{ imgUrls }}" wx:key="{{ index }}">
       <view class="modules_item" bindtap="moduleClick" id="{{index}}">
         <image src="{{item}}" class="modules_image" wx:key="{{index}}"/>
       </view>
     </block>
   </view>
 
-  <import src="/src/templates/articleTmpl/item.wxml"/>
+  <!-- <import src="/src/templates/articleTmpl/item.wxml"/> -->
 
-  <template is="article_tmpl" wx:for="{{ [1,2,3] }}"></template>
-  
+  <!-- <template is="article_tmpl" wx:for="{{ [1,2,3] }}"></template> -->
+  <content1Comp list-data="{{ [1,2] }}"></content1Comp>
 </view>

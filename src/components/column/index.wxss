@@ -1,4 +1,5 @@
 /* src/components/column/index.wxss */
+@import '/app.wxss';
 
 .box {
   border-bottom: 1rpx solid #dbdbdb;
@@ -10,12 +11,12 @@
 }
 
 .box_items {
-  width: 180rpx;
+  width: 25%;
   height: 180rpx;
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px dotted #dbdbdb;
+  /* border-bottom: 1px dotted #dbdbdb; */
 }
 .box_items > image {
   padding: 10rpx;

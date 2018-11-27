@@ -5,11 +5,11 @@ export default {
     submitText: '确定',
     cancelText: '取消'
   },
-  common: {
-    mobile: '手机号',
-    core: '积分'
-  },
+  lang: 'En',
   home3: {
+    mobile: '手机号',
+    core: '积分',
+    name:'昵称',
     dayClick: '签到',
     my: {
       project: '课程',

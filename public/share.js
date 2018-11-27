@@ -6,7 +6,7 @@ import {
 const defaultValue = () => {
   return {
     title: 'Yoyi',
-    path: Router.routerIndex.url + '?share=true'
+    path: Router.routeindex.url + '?share=true'
   }
 }
 
@@ -16,7 +16,7 @@ class Share {
    * create share action
    * getApp().$share({})
    * getApp().$share({
-   *  path: 'routerIndex',
+   *  path: 'routeindex',
    *  params1: '',
    *  params2: {}
    * })
@@ -46,7 +46,7 @@ class Share {
     } else if (action) {
       getApp().$store.dispatch(action, rest)
     } else {
-      getApp().$api.reLaunch('routerIndex', rest)
+      getApp().$api.reLaunch('routeindex', rest)
     }
   }
   

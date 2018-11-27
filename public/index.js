@@ -3,7 +3,7 @@ import $request from './request'
 import $share from './share'
 import $page from './basePage'
 import $t from './i18n/index.js'
-import $router from './router/index.js'
+import $router, { $routerMap } from './router/index.js'
 import $config from './config/index.js'
 
 wx.ct = {
@@ -12,6 +12,7 @@ wx.ct = {
   $share,
   $page,
   $router,
+  $routerMap,
   $config,
   $t
 }

@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "content1Comp": "/src/components/content1/index"
+  }
+}

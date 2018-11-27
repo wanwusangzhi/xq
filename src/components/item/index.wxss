@@ -1,4 +1,5 @@
 /* src/components/item/index.wxss */
+@import '/app.wxss';
 
 .box_item {
   height: 90rpx;

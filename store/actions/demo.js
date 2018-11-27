@@ -26,7 +26,7 @@ const actions = {
   demoAction({ commit, dispatch, state }, payload) {
     commit('demo/demoCommit', payload)
     dispatch('demo/demoAction1', {name: 'YeWen'})
-    console.warn(wx.ct.$api.navigateTo('pagesWelcome', { obj: 123 }))
+    console.warn(wx.ct.$api.navigateTo(wx.ct.$routerMap.pageswelcome, { obj: 123 }))
   },
   demoAction1({ commit, dispatch, state }, payload) {
     commit('demo/demoCommitName', payload)

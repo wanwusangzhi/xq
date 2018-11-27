@@ -1,9 +1,8 @@
-export default {
-  routerIndex: {
+const routes = {
+  routeindex: {
     url: '/src/route/index',
     isNeedLogin: false
   },
-
   // tabbar
   home: {
     url: '/src/pages/tabbar/home',
@@ -17,13 +16,19 @@ export default {
     url: '/src/pages/tabbar/home3',
     isNeedLogin: false
   },
-  // tabbar
-  pageNotFound: {
-    url: '/src/common/notFound',
-    isNeedLogin: false,
+  // article
+  articlemain: {
+    url: '/src/pages/article/main',
+    isNeedLogin: false
   },
-  pagesWelcome: {
+  // demo
+  pageswelcome: {
     url: '/src/pages/welcome/index',
     isNeedLogin: false
   }
 }
+const _routesMap = {}
+Object.keys(routes).map(item => _routesMap[item] = item)
+export const $routerMap = _routesMap
+
+export default routes
