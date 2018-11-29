@@ -5,13 +5,13 @@ const URL = {
   GET_MOVIE_DETAIL: 'https://ticket-api-m.mtime.cn/movie/detail.api',
 }
 /**
-getApp().$store.dispatch('demo/demoAction', {
+wx.ct.$store.dispatch('demo/demoAction', {
   id: 123
 })
  */
 const actions = {
   demoGetList ({commit}, payload) {
-    return getApp().$request({
+    return wx.ct.$request({
       url: URL.GET_LOCATION_LIST,
       data: payload,
       success(res) {

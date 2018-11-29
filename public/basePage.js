@@ -9,9 +9,9 @@ const createBasePage = function() {
       this._id = this.route
       pageInstances[this._id] = this
 
-      this.$store = getApp().$store
-      this.$api = wx.ct && wx.ct.$api
-      this.$t = wx.ct && wx.ct.$t
+      this.$store = wx.ct.$store
+      this.$api = wx.ct.$api
+      this.$t = wx.ct.$t
       this._setData = this.setData
       this.setData = (obj) => {
         this._setData(obj)

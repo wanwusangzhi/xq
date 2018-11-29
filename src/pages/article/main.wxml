@@ -1,2 +1,4 @@
 <!--src/pages/article/main.wxml-->
-<view>xiangin</view>
+<view class="contianer">
+  view
+</view>

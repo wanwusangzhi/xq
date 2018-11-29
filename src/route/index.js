@@ -17,7 +17,7 @@ const page = {
     if (this.options.share) {
       $share.dealShare(this.options)
     } else {
-      $api.reLaunch($routerMap.home2)
+      $api.reLaunch($routerMap.home)
     }
   },
   add() {

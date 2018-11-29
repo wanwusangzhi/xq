@@ -1,1 +1,4 @@
 /* src/pages/article/main.wxss */
+.contianer {
+  padding: 30rpx;
+}
