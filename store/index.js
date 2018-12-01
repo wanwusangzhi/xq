@@ -14,8 +14,8 @@ class Store {
    */
   static createReducers() {
     for (const key in reducers) {
-      this.state[key] = Object.assign(reducers[key].state)
-      this.reducers[key] = Object.assign(reducers[key].reducers)
+      this.state[key] = Object.assign(reducers[key].state || {})
+      this.reducers[key] = Object.assign(reducers[key].reducers || {})
     }
   }
   /**
@@ -38,7 +38,7 @@ class Store {
         throw new Error(`name '${methodName}' is not method`)
       }
       method({
-        state: this.state[methodName.split('/').shift()],
+        state: this.state[methodName.split(/\/|\./g).shift()],
         globalState: this.state,
         dispatch: (methodName, payload) => {
           this.dispatch(methodName, payload)
@@ -58,7 +58,7 @@ class Store {
     let method = null
     try {
       method = _getFunction(this.reducers, methodName)
-      method(this.state[methodName.split('/').shift()], payload)
+      method(this.state[methodName.split(/\/|\./g).shift()], payload)
     } catch(e) {
       console.error(e)
     }
@@ -66,7 +66,7 @@ class Store {
 }
 
 const _getFunction = (obj, methodName) => {
-  return methodName.split('/').reduce((a, b) => {
+  return methodName.split(/\/|\./g).reduce((a, b) => {
     return a[b]
   }, obj)
 }

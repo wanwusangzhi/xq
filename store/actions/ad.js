@@ -1,4 +1,3 @@
-const { $request } = wx.ct
 const isTesting = true
 
 const URL = {
@@ -7,6 +6,7 @@ const URL = {
 
 const actions = {
   getAdList({ commit }, payload) {
+    const { $request } = wx.ct
     $request(URL.LIST)
   }
 }

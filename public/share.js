@@ -5,7 +5,7 @@ import {
 
 const defaultValue = () => {
   return {
-    title: 'Yoyi',
+    title: 'YouNi',
     path: Router.routeindex.url + '?share=true'
   }
 }

@@ -1,12 +1,14 @@
 //app.js
-import $store from './store/index.js'
-import publicApi from './public/index.js'
+// import $store from './store/index.js'
+// import publicApi from './public/index.js'
 let app = {
   onLaunch(options) {
-    wx.ct.$store = $store
     console.warn('app options', options)
+    require('./public/index.js')
+    wx.ct.$store = require('./store/index.js').default
   },
-  onShow() {},
+  onShow() {
+  },
   // $store,
   // ...publicApi
 }
