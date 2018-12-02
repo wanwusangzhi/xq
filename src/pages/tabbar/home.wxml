@@ -1,29 +1,9 @@
 <!--src/pages/tabbar/home.wxml-->
 <view class="container">
   <view class="lang .color_2" bindtap='changeLanguage'>{{ t.lang }}</view>
-<!-- 广告 -->
-  <view class="boardcast">
-    <swiper
-      class="boardcast_swiper"
-      indicator-dots="true"
-      indicator-color="#d81e06"
-      indicator-active-color="white"
-      circular="true"
-      autoplay="true"
-      display-multiple-items="1"
-      previous-margin="0rpx"
-      next-margin="0rpx"
-      interval="3000"
-      duration="1500">
-      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-        <swiper-item>
-          <image src="{{item}}" class="boardcast_swiper_image" />
-        </swiper-item>
-      </block>
-    </swiper>
-    <!-- 过渡条 -->
-    <progress percent="100" color="#d81e06" class="boardcast_progress"/>
-  </view>
+  <!-- 广告 -->
+  <adComp list-data="{{ imgUrls }}"></adComp>
+
   <!-- 模块 -->
   <view class="modules">
     <block wx:for="{{ imgUrls }}" wx:key="{{ index }}">

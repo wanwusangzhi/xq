@@ -1,5 +1,5 @@
-export default {
-  state: {
+const state = {
+  curItem: {
     article_id: String,
     article_topic_id: String,
     article_account_id: String,
@@ -17,4 +17,13 @@ export default {
     article_pass: Int8Array,
     article_update_admin_id: String
   }
+}
+const reducers = {
+  merge_fetch_by_id({ state }, payload) {
+    state.curItem = payload
+  }
+}
+export default {
+  state,
+  reducers
 }

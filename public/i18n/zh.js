@@ -15,5 +15,9 @@ export default {
       project: '课程',
       score: '学分'
     }
+  },
+  article: {
+    like: '互动',
+    commentArea: '评论区'
   }
 }

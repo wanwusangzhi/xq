@@ -8,9 +8,7 @@ let app = {
     wx.ct.$store = require('./store/index.js').default
   },
   onShow() {
-  },
-  // $store,
-  // ...publicApi
+  }
 }
 
 App(app)

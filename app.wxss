@@ -53,8 +53,11 @@ view, text, swiper, scroll-view, image {
   right: 0;
   bottom: -20rpx;
   content: '';
-  height: 20rpx;
+  height: 10rpx;
   width: 100%;
   /* background: linear-gradient(-45deg, #d81e06, #0752dd); */
-  border-top:1rpx solid #dbdbdb;
+  border-top:1rpx solid #fafafa;
+}
+.app_box:hover{
+  filter: opacity(0.85);
 }

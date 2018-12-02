@@ -2,7 +2,7 @@
 @import '/app.wxss';
 
 .box {
-  border-bottom: 1rpx solid #dbdbdb;
+  border-bottom: 1rpx solid #fafafa;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border-bottom: 1px dotted #dbdbdb; */
+  /* border-bottom: 1px dotted #fafafa; */
 }
 .box_items > image {
   padding: 10rpx;

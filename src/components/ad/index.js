@@ -1,4 +1,4 @@
-// src/components/column/index.js
+// src/components/ad/index.js
 Component({
   options: {
     addGlobalClass: true
@@ -7,9 +7,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    compStyle: {
+      type: String,
+      default: ''
+    },
     listData: {
-      default: [],
-      type: Array
+      type: Array,
+      default: []
     }
   },
 
@@ -19,7 +23,7 @@ Component({
   data: {
 
   },
-  
+
   /**
    * 组件的方法列表
    */

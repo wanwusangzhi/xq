@@ -52,8 +52,8 @@
       {
         "pagePath": "src/pages/tabbar/home3",
         "text": "个人",
-        "iconPath": "/assets/tab_4.png",
-        "selectedIconPath": "/assets/tab_4_active.png"
+        "iconPath": "/assets/tab_3.png",
+        "selectedIconPath": "/assets/tab_3_active.png"
       }
     ]
   },

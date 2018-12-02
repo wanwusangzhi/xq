@@ -25,11 +25,11 @@
       <text>200</text>
     </label>
     <label>
-      <image class="footer_wrapper_icon" src="/assets/agree.png"></image>
+      <image class="footer_wrapper_icon" src="/assets/like.png"></image>
       <text>200</text>
     </label>
     <label>
-      <image class="footer_wrapper_icon" src="/assets/agree.png"></image>
+      <image class="footer_wrapper_icon" src="/assets/share.png"></image>
       <text>200</text>
     </label>
   </view>

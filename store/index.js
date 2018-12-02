@@ -37,7 +37,7 @@ class Store {
       if (typeof method !== 'function') {
         throw new Error(`name '${methodName}' is not method`)
       }
-      method({
+      return method({
         state: this.state[methodName.split(/\/|\./g).shift()],
         globalState: this.state,
         dispatch: (methodName, payload) => {
@@ -58,7 +58,16 @@ class Store {
     let method = null
     try {
       method = _getFunction(this.reducers, methodName)
-      method(this.state[methodName.split(/\/|\./g).shift()], payload)
+      method({ 
+        state: this.state[methodName.split(/\/|\./g).shift()],
+        globalState: this.state,
+        dispatch: (methodName, payload) => {
+          this.dispatch(methodName, payload)
+        },
+        commit: (commitName, commitPayload) => {
+          this.commit(commitName, commitPayload)
+        }
+      }, payload)
     } catch(e) {
       console.error(e)
     }

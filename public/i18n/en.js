@@ -15,5 +15,9 @@ export default {
       project: 'Project',
       score: 'Score'
     }
+  },
+  article: {
+    like: 'like',
+    commentArea: 'commentArea'
   }
 }

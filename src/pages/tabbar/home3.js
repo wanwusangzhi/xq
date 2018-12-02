@@ -36,7 +36,7 @@ const page = {
         src: ''
       }, {
         name: '',
-        src: '/assets/agree.png'
+        src: '/assets/default_column.png'
       }]
     }
   },
