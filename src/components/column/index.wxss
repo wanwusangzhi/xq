@@ -4,7 +4,7 @@
 .box {
   border-bottom: 1rpx solid #fafafa;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   box-sizing: border-box;
   font-size: 30rpx;
@@ -16,7 +16,6 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* border-bottom: 1px dotted #fafafa; */
 }
 .box_items > image {
   padding: 10rpx;
@@ -28,4 +27,5 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space:nowrap;
+  font-weight: 400;
 }

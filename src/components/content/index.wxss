@@ -1,17 +1,17 @@
 /* src/components/content/index.wxss */
 @import '/app.wxss';
 
-.box {
+.content_box {
   position: relative;
   display: flex;
   padding: 20rpx;
 }
-.box:not(:last-child) {
+.content_box:not(:last-child) {
   margin-bottom: 20rpx;
 }
 
 /* left side */
-.box_left {
+.content_box_left {
   flex: 2;
   height: 160rpx;
   word-break: break-all;
@@ -24,7 +24,7 @@
 }
 
 /* right side */
-.box_right {
+.content_box_right {
   flex: 1;
   padding-left: 20rpx;
 }

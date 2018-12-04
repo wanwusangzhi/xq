@@ -11,6 +11,7 @@ Component({
       type: String,
       default: ''
     },
+    small: null,
     listData: {
       type: Array,
       default: []

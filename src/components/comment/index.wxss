@@ -2,7 +2,7 @@
 
 /* 底部 */
 
-.box {
+.comment_box {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -16,15 +16,15 @@
   text-align: center;
 }
 
-.box>view {
+.comment_box>view {
   flex: 1;
 }
 
-.box>view:hover {
+.comment_box>view:hover {
   filter: brightness(1.2);
 }
 
-.box_img {
+.comment_box_img {
   width: 48rpx;
   height: 48rpx;
   margin-right: 10rpx;

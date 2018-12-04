@@ -1,4 +1,9 @@
-const { $page, $share, $api } = wx.ct
+const {
+  $page,
+  $share,
+  $api,
+  $routerMap
+} = wx.ct
 
 const page = {
   data: {
@@ -16,12 +21,35 @@ const page = {
       return {
         lang: this.$t('lang')
       }
+    },
+    columnList() {
+      return [{
+        name: this.$t('home1.columnList.writing'),
+        src: '',
+        url: $routerMap.articlemain
+      }, {
+        name: this.$t('home3.my.project'),
+        src: '',
+        url: $routerMap.articlemain
+      }, {
+        name: '游戏ssa枯枯顶替',
+        src: '',
+        url: $routerMap.articlemain
+      }, {
+        name: '游戏ssa枯枯顶替',
+        src: '',
+        url: $routerMap.articlemain
+      }, {
+        name: '游戏ssa枯枯顶替',
+        src: '',
+        url: $routerMap.articlemain
+      }]
     }
   },
-  moduleClick (e) {
+  moduleClick(e) {
     const id = e.currentTarget.id
   },
-  changeLanguage () {
+  changeLanguage() {
     this.$changeLanguage()
   }
 }

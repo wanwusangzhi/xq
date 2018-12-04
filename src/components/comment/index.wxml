@@ -2,7 +2,7 @@
 <!-- 评论区 -->
 <view class="comment_area">{{ t.article.commentArea }}</view>
 
-<view class="comment_list app_box" wx:for="{{ [1,2] }}">
+<view class="comment_list app_box" wx:for="{{ [1,2] }}" wx:key="{{index}}">
   <view class="comment_list_header">
     <image src="/assets/tab_3_active.png"></image>
   </view>
@@ -16,11 +16,11 @@
 <view class="relative_box"></view>
 
 <!-- 操作区 -->
-<view class="box" catchtap='click'>
+<view class="comment_box" catchtap='click'>
   <view id="0">
-    <image class="box_img" src="/assets/comment.png"></image>100</view>
+    <image class="comment_box_img" src="/assets/comment.png"></image>100</view>
   <view id="1">
-    <image class="box_img" src="/assets/like.png"></image>100</view>
+    <image class="comment_box_img" src="/assets/like.png"></image>100</view>
   <view id="2">
-    <image class="box_img" src="/assets/share.png"></image>100</view>
+    <image class="comment_box_img" src="/assets/share.png"></image>100</view>
 </view>

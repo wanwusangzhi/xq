@@ -13,7 +13,7 @@
       <view class="mobile">{{t.mobile}}: 18938888888</view>
     </view>
 
-    <view class="right_box">
+    <!-- <view class="right_box">
       <view class="right_box_image">
         <image mode="scaleToFill" src="/assets/notice.png"></image>
       </view>
@@ -24,11 +24,11 @@
         {{ t.dayClick }}
         <image mode="scaleToFill" src="/assets/buxing.png"></image>
       </view>
-    </view>
+    </view> -->
   </view>
 
-  <columnComp list-data="{{ columnList }}"></columnComp>
+  <view class="comp_box"><columnComp list-data="{{ columnList }}"></columnComp></view>
 
-  <itemComp list-data="{{ itemList }}"></itemComp>
+  <view class="comp_box"><itemComp list-data="{{ itemList }}"></itemComp></view>
 
 </view>

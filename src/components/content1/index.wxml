@@ -1,5 +1,5 @@
 <!--src/components/content_1/index.wxml-->
-<view class="box app_box" wx:for="{{ listData }}" wx:key="{{ index }}" id="{{index}}" >
+<view class="content1_box app_box" wx:for="{{ listData }}" wx:key="{{ index }}" id="{{index}}" >
   <!-- 标题 -->
   <view class="title">
     <view class="title_header">

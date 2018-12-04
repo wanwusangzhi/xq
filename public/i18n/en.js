@@ -16,6 +16,11 @@ export default {
       score: 'Score'
     }
   },
+  home1: {
+    columnList: {
+      writing: 'article'
+    }
+  },
   article: {
     like: 'like',
     commentArea: 'commentArea'

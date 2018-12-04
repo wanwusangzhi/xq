@@ -2,7 +2,7 @@
 @import '/app.wxss';
 /* 列表 */
 
-.box {
+.content1_box {
   width: 100%;
   margin-bottom: 20rpx;
   position: relative;

@@ -1,10 +1,10 @@
 <!--src/components/ad/index.wxml-->
 <view class="boardcast" style="{{ compStyle || '' }}">
   <swiper
-    class="boardcast_swiper"
+    class="'boardcast_swiper' {{ small ? 'small' : ''}}"
     indicator-dots="{{ listData.length > 1 }}"
-    indicator-color="#d81e06"
-    indicator-active-color="white"
+    indicator-color="white"
+    indicator-active-color="#d81e06"
     circular="true"
     autoplay="true"
     display-multiple-items="1"

@@ -9,11 +9,16 @@ export default {
   home3: {
     mobile: '手机号',
     core: '积分',
-    name:'昵称',
+    name: '昵称',
     dayClick: '签到',
     my: {
       project: '课程',
       score: '学分'
+    }
+  },
+  home1: {
+    columnList: {
+      writing: '随笔'
     }
   },
   article: {

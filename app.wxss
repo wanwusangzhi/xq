@@ -9,8 +9,17 @@ view, text, swiper, scroll-view, image {
   width: 100%;
   position: relative;
   box-sizing: border-box;
+  
 }
-
+.comp_box {
+  /* border: 1rpx solid #d81e06; */
+  border: 1rpx solid #fafafa;
+  margin: 30rpx;
+  /* padding: 0 20rpx; */
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 0 30rpx 10rpx #fafafa;
+}
 /* float */
 
 .float_left {
@@ -43,21 +52,22 @@ view, text, swiper, scroll-view, image {
 .app_box{
   position: relative;
 }
-.app_box:not(:last-child) {
+/* .app_box:not(:last-child) {
   margin-bottom: 20rpx;
-}
+} */
 .app_box:not(:last-child)::after {
   position: absolute;
   display: block;
   left: 0;
   right: 0;
-  bottom: -20rpx;
+  bottom: -19rpx;
   content: '';
-  height: 10rpx;
+  height: 20rpx;
   width: 100%;
-  /* background: linear-gradient(-45deg, #d81e06, #0752dd); */
-  border-top:1rpx solid #fafafa;
+  border-top: 1rpx solid #fafafa;
+  background: linear-gradient(185deg, #fafafa, #fcfcfc);
+  /* background: #fafafa; */
 }
 .app_box:hover{
-  filter: opacity(0.85);
+  filter: opacity(.8);
 }
