@@ -13,12 +13,12 @@ view, text, swiper, scroll-view, image {
 }
 .comp_box {
   /* border: 1rpx solid #d81e06; */
-  border: 1rpx solid #fafafa;
+  border: 1rpx solid #f1f1f1;
   margin: 30rpx;
   /* padding: 0 20rpx; */
   border-radius: 16rpx;
   overflow: hidden;
-  box-shadow: 0 0 30rpx 10rpx #fafafa;
+  box-shadow: 0 0 30rpx 10rpx #f1f1f1;
 }
 /* float */
 
@@ -49,7 +49,7 @@ view, text, swiper, scroll-view, image {
 }
 
 /* app box */
-.app_box{
+.app_box, .app_box_item{
   position: relative;
 }
 /* .app_box:not(:last-child) {
@@ -64,10 +64,10 @@ view, text, swiper, scroll-view, image {
   content: '';
   height: 20rpx;
   width: 100%;
-  border-top: 1rpx solid #fafafa;
-  background: linear-gradient(185deg, #fafafa, #fcfcfc);
-  /* background: #fafafa; */
+  border-top: 1rpx solid #f1f1f1;
+  background: linear-gradient(185deg, #f1f1f1, #fcfcfc);
 }
-.app_box:hover{
+.app_box:active, .app_box_item:active{
   filter: opacity(.8);
+  background: #f1f1f1;
 }

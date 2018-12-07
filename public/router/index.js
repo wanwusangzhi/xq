@@ -21,6 +21,12 @@ const routes = {
     url: '/src/pages/article/main',
     isNeedLogin: false
   },
+
+  // article
+  setting: {
+    url: '/src/pages/setting/privacy/index',
+    isNeedLogin: false
+  },
   // demo
   pageswelcome: {
     url: '/src/pages/welcome/index',

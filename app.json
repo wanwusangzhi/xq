@@ -20,13 +20,18 @@
     {
       "root": "src/pages/welcome",
       "pages": [
-        "index",
-        "index2"
+        "index"
+      ]
+    },
+    {
+      "root": "src/pages/setting",
+      "pages": [
+        "privacy/index"
       ]
     },
     {
       "root": "src/pages/article",
-      "pages":[
+      "pages": [
         "main"
       ]
     }
@@ -35,7 +40,7 @@
     "color": "#dbdbdb",
     "selectedColor": "#d81e06",
     "borderStyle": "white",
-    "backgroundColor":"#fafafa",
+    "backgroundColor": "#fafafa",
     "position": "bottom",
     "list": [
       {

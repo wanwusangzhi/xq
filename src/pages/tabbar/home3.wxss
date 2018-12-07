@@ -5,8 +5,10 @@
   width: 100%;
   display: flex;
   padding: 30rpx;
-  padding-top: 100rpx;
+  /* padding-top: 100rpx; */
   background: linear-gradient(180deg, #d81e06,#c01802 70%,#d81e06);
+  position: relative;
+  color: white;
 }
 
 /* 左侧 */

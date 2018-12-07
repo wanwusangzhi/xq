@@ -27,7 +27,7 @@ Component({
    */
   methods: {
     click(e) {
-      if (!e.target.id) return
+      if (e.target.id === undefined) return
       const id = e.target.id
       this.triggerEvent('callback', {
         index: id
