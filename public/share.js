@@ -42,7 +42,7 @@ class Share {
     console.warn('share options', options)
     const { action, path, share, ...rest } = { ...options }
     if (path) {
-      wx.ct.$api.reLaunch(path, rest)
+      wx.ct.$api.redirectTo(path, rest)
     } else if (action) {
       wx.ct.$store.dispatch(action, rest)
     } else {

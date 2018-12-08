@@ -12,18 +12,26 @@ const page = {
     a: 123,
     ab: 123
   },
+  onShow() {
+    console.log('onshow')
+  },
   beforeEnter() {
     // 分享进入
     if (this.options.share) {
       $share.dealShare(this.options)
     } else {
-      $api.reLaunch($routerMap.home3)
+      $api.reLaunch($routerMap.home2)
     }
   },
   add() {
     this.setData({
       a: ++this.data.a
     })
+  },
+  onShareAppMessage() {
+    return {
+      title: 'sdfs'
+    }
   }
 }
 $page(page)

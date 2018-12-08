@@ -22,10 +22,10 @@ Component({
    */
   methods: {
     click(e) {
-      if (e.target.id === undefined) return
-      const id = e.target.id
+      let id = e.target.id
+      if (id === undefined || id === '') return
       this.triggerEvent('callback', {
-        index: id
+        index: +id
       })
     }
   }

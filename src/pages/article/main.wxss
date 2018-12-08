@@ -1,5 +1,6 @@
 /* src/pages/article/main.wxss */
 .container {
+  position: relative;
   padding: 30rpx;
   padding-bottom: 0;
 }
@@ -24,3 +25,4 @@
   word-break: break-all;
   padding: 20rpx 0;
 }
+

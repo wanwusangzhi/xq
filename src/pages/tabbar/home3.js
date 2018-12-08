@@ -20,7 +20,7 @@ const page = {
     },
     itemList() {
       return [{
-        name: this.$t('home3.columnList.setting'),
+        name: this.$t('home3.columnList.privacy'),
         openType: ''
       }, {
         name: this.$t('home3.columnList.setting'),

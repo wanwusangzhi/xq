@@ -12,7 +12,8 @@ export default {
     name: '昵称',
     dayClick: '签到',
     columnList: {
-      setting: '权限设置'
+      setting: '权限设置',
+      privacy: '规则'
     }
   },
   home1: {

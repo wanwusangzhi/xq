@@ -12,7 +12,8 @@ export default {
     name: 'Name',
     dayClick:'Record',
     columnList: {
-      setting: 'Privacy Setting'
+      setting: 'Privacy Setting',
+      privacy: 'Privacy Rules'
     }
   },
   home1: {

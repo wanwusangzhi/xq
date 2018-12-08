@@ -14,18 +14,18 @@
       <view class="mobile">{{t.mobile}}: 18938888888</view>
     </view>
 
-    <!-- <view class="right_box">
+    <view class="right_box">
       <view class="right_box_image">
         <image mode="scaleToFill" src="/assets/notice.png"></image>
       </view>
-      <view class="right_box_image">
+      <!-- <view class="right_box_image">
         <image mode="scaleToFill" src="/assets/setting.png"></image>
-      </view>
+      </view> -->
       <view class="day_click">
         {{ t.dayClick }}
         <image mode="scaleToFill" src="/assets/buxing.png"></image>
       </view>
-    </view> -->
+    </view>
   </view>
   <view class="comp_box_bg"></view>
   <view class="comp_box">

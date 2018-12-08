@@ -11,8 +11,9 @@ export const aopRouter = (urlKey, params, cb) => {
         console.error('need login')
       } else {
         const tmp = Object.assign({}, $router[urlKey])
+        const url = tmp.url + (params ? "?" + _obj2url(Object.assign({}, params)) : '')
         return {
-          url: tmp.url + (params ? "?" + _obj2url(Object.assign({}, params)) : '')
+          url: url
         }
       }
     } else {
