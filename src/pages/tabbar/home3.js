@@ -25,6 +25,9 @@ const page = {
       }, {
         name: this.$t('home3.columnList.setting'),
         openType: 'openSetting'
+      }, {
+        name: this.$t('home3.columnList.contactUs'),
+        // openType: ''
       }]
     },
     columnList() {
@@ -46,7 +49,15 @@ const page = {
       case 1:
         $api.navigateTo('articlemain');
         break;
+      case 2:
+        $api.navigateTo('contactpage');
+        break;
     }
+  },
+  onShareAppMessage() {
+    return wx.ct.$share.createShare({
+      id: 123
+    })
   }
 }
 $page(page)

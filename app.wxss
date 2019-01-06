@@ -2,7 +2,7 @@
 page{
   min-height: 100%;
 }
-view, text, swiper, scroll-view, image,textarea,span {
+view, text, swiper, scroll-view, image,textarea,span, button {
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

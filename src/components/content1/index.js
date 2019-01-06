@@ -11,7 +11,6 @@ Component({
       default: [],
       type: Array
     }
-
   },
 
   /**

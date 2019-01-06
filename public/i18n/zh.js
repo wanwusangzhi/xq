@@ -12,14 +12,15 @@ export default {
     name: '昵称',
     dayClick: '签到',
     columnList: {
+      privacy: '规则',
       setting: '权限设置',
-      privacy: '规则'
+      contactUs: '联系我们'
     }
   },
   home1: {
     columnList: {
       writing: '文章',
-      shoping: '购物',
+      shopping: '购物',
       leisure: '休闲',
       arts: '艺术'
     }

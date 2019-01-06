@@ -12,8 +12,9 @@ export default {
     name: 'Name',
     dayClick:'Record',
     columnList: {
+      privacy: 'Rules',
       setting: 'Privacy Setting',
-      privacy: 'Privacy Rules'
+      contactUs: 'Contact Us'
     }
   },
   home1: {
